@@ -35,7 +35,27 @@
     text-shadow: 2px 1px;
     font-style: italic;
 }
-        </style>
+#promo-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-move 1.5s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fade-in-move {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+</style>
     </head>
     <!-- END HEAD -->
 
@@ -87,7 +107,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="promo-block-divider">
-                            <h1 class="promo-block-title"> Adam <br/> Koroly</h1>
+                            <h1 id="promo-title" class="promo-block-title">Adam <br/> Koroly</h1>
                             <p class="promo-block-text">Web Designer &amp; Passionate Student</p>
                         </div>
                         <ul class="list-inline">
